@@ -2,7 +2,7 @@
   "type": "postgres",
   "host": "localhost",
   "port": 5432,
-  "user": "felipe",
+  "username": "postgres",
   "password": "docker",
-  "database": "gostack_gobarber"
+  "database": "gostack_gobarber_pg"
 }
