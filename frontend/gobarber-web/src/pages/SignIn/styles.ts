@@ -4,7 +4,7 @@ import { shade } from 'polished';
 import signInBackgroundImg from '../../assets/sign-in-background.png';
 
 export const Container = styled.div`
-  height: 100%;
+  height: 100vh;
   display: flex;
   align-items: stretch;
 `;
@@ -18,7 +18,7 @@ export const Content = styled.div`
   max-width: 700px;
 
   form {
-    margin: 80px 0;
+    margin: 80px 0 50px;
     width: 340px;
     text-align: center;
 
@@ -27,6 +27,7 @@ export const Content = styled.div`
     }
 
     input {
+      height: 56px;
       background: #232129;
       color: #f4ede8;
       border-radius: 10px;
@@ -46,8 +47,7 @@ export const Content = styled.div`
     button {
       background: #ff9000;
       height: 56px;
-      margin-top: 16px;
-      padding: 0 16px;
+      margin-top: 24px;
       border-radius: 10px;
       border: 0;
       color: #312338;
