@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import { FiArrowLeft, FiUser, FiMail, FiLock } from 'react-icons/fi';
 import { Form } from '@unform/web';
 
@@ -10,9 +10,7 @@ import Button from '../../components/Button';
 import { Container, Content, Background } from './styles';
 
 const SignUp: React.FC = () => {
-  function handleSubmit(data: object) {
-    console.log(data);
-  }
+  const handleSubmit = useCallback((data: object) => console.log(data), []);
 
   return (
     <Container>
