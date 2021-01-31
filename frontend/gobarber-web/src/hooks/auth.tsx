@@ -14,7 +14,6 @@ interface SignInCredentials {
 
 interface AuthContextData {
   user: object;
-  // isSignedIn: boolean;
   signIn(credentials: SignInCredentials): Promise<void>;
   signOut(): void;
 }
